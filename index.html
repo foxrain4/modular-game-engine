@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modular Game Engine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Modular Game Engine</h1>
+    <p>Personal reference for building 1-page modular games and tools.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>📁 Directory Structure</h2>
+      <pre><code>modular-game-engine/
+├── core.js
+├── input.js
+├── save.js
+├── ui.js
+└── style.css</code></pre>
+    </section>
+
+    <section>
+      <h2>🧩 How to Use in a New Project</h2>
+      <pre><code>&lt;link rel="stylesheet" href="https://yourname.github.io/modular-game-engine/style.css"&gt;
+&lt;script src="https://yourname.github.io/modular-game-engine/core.js"&gt;&lt;/script&gt;
+&lt;script src="https://yourname.github.io/modular-game-engine/input.js"&gt;&lt;/script&gt;
+</code></pre>
+    </section>
+
+    <section>
+      <h2>✅ Do & ❌ Don’t</h2>
+      <table>
+        <thead><tr><th>✅ Do</th><th>❌ Don’t</th></tr></thead>
+        <tbody>
+          <tr><td>Use modules only when needed</td><td>Link unused scripts</td></tr>
+          <tr><td>Keep it to one HTML page</td><td>Overload with features</td></tr>
+          <tr><td>Use canvas and divs for layout</td><td>Assume server features</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>🧪 Example Projects</h2>
+      <ul>
+        <li>Tile Generator — uses core, input, ui</li>
+        <li>Stat Block Maker — uses ui</li>
+        <li>Map Editor — uses core, input, save</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧠 Notes to Self</h2>
+      <ul>
+        <li>You can copy modules instead of linking them</li>
+        <li>Comment logic and keep code clean</li>
+        <li>Modules are meant to be optional</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>For personal development use. Powered by modular thinking.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  <style>
+    body {
+  font-family: system-ui, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2 {
+  color: #3a3a3a;
+  border-left: 4px solid #ccc;
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+    </style>
+  <script>
+    // Modular Game Engine – Internal Script
+// (Safe to leave empty or expand over time)
+
+// Optional: Add collapsible sections
+document.querySelectorAll("h2").forEach(header => {
+  header.style.cursor = "pointer";
+  header.addEventListener("click", () => {
+    const next = header.nextElementSibling;
+    if (next && next.tagName !== "H2") {
+      next.style.display = next.style.display === "none" ? "" : "none";
+    }
+  });
+});
+
+// Optional future idea: Highlight current module
+// const currentModule = "input.js"; // example
+// document.querySelectorAll("code").forEach(code => {
+//   if (code.textContent.includes(currentModule)) {
+//     code.style.background = "#ffffcc";
+//   }
+// });
+
+  </script>
+</html>
